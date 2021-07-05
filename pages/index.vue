@@ -32,6 +32,7 @@
         @click="setCountdownState(true)"
       />
     </div>
+    <Card class="w-full lg:w-1/2" />
   </section>
 </template>
 
