@@ -5,6 +5,8 @@
       { completed: completed },
       { abandon: abandon },
       { start: start },
+      { failed: failed },
+      { succeeded: succeeded },
     ]"
     :disabled="hasActive"
     @click="$emit('click')"
@@ -33,6 +35,14 @@ export default Vue.extend({
       default: false,
     },
     start: {
+      type: Boolean,
+      default: false,
+    },
+    failed: {
+      type: Boolean,
+      default: false,
+    },
+    succeeded: {
       type: Boolean,
       default: false,
     },
